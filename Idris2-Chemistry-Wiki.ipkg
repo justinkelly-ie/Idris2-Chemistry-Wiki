@@ -1,0 +1,19 @@
+package Idris2-Chemistry-Wiki
+version = 0.1.0
+authors = "Justin Kelly"
+brief   = "Discrete Biochemistry Architecture Specification Wiki"
+
+depends = base
+        , contrib
+        , linear
+        , Idris2-Multiset-Core
+        , Idris2-Chemistry
+        , idris2-QuickCheck
+
+sourcedir = "Library"
+
+modules = Wiki.Generators
+        , Wiki.ChemistryScaleTransformSpec
+
+main = Wiki.Main
+executable = lbiochemistry-wiki
